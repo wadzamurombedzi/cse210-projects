@@ -1,12 +1,13 @@
 using System;
+using System.Runtime.CompilerServices;
 
-class JournalTEST
+class JournalTest
 {
     private string myJournalFile = "MyJournal.json";
     public void Run()
     {
-        // DisplayWelcome();
-        // DisplayChoices();
+        // Display Welcome();
+        // Display Choices;
     }
     private void DisplayWelcome()
     {
@@ -15,13 +16,13 @@ class JournalTEST
     private int DisplayChoices()
     {
         string choices = @"
- Please select one of the following choices:
- 1. Write
- 2. Display
- 3. Load
- 4. Save
- 5. Quit
- What would you like to do? ";
+        Please select one of the following choices:
+        1. Write
+        2. Display
+        3. Load
+        4. Save
+        5. Quit
+        What would you like to do? ";
 
         Console.WriteLine(choices);
         string userInput = Console.ReadLine();
@@ -30,7 +31,7 @@ class JournalTEST
     }
     private void DisplayGoodbye()
     {
-        Console.WriteLine("\nThank you for using the Journal App!\n");
+        Console.WriteLine("\nThank you for using Journal App!\n");
     }
 
     private void CreateJournalFile()
@@ -40,5 +41,4 @@ class JournalTEST
             File.Create(myJournalFile);
         }
     }
-
 }

@@ -4,7 +4,7 @@ class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("Hello Develop02 World!");
+        Console.WriteLine("Hello Developer02 World!");
         // Journal myJournal = new Journal();
         // myJournal.Run();
 
@@ -40,20 +40,16 @@ class Program
                     // Console.WriteLine("Success Choice 1!");
                     break;
                 case 2:
-                    // Code Here
                     journal.Display();
                     // Console.WriteLine("Success Choice 2!");
                     break;
                 case 3:
-                    // Code Here
                     Console.WriteLine("Success Choice 3!");
                     break;
                 case 4:
-                    // Code Here
                     Console.WriteLine("Success Choice 4!");
                     break;
                 case 5:
-                    // Code Here
                     Console.WriteLine("\nThank you for using the Journal App!\n");
                     break;
                 default:
@@ -108,8 +104,6 @@ class Program
     {
         DateTime now = DateTime.Now;
         string currentDateTime = now.ToString("F");
-        // Console.WriteLine(now.ToString("F"));
-        // Displays Saturday, March 01, 2008 7:00:00 AM
         return currentDateTime;
     }
 
